@@ -1,0 +1,76 @@
+#include <stdio.h>
+int sum(int, int);
+double kujumlisha(double, double);
+float average(float, float);
+int diff(int, int);                           
+int max(int, int);
+int min(int, int);
+int main(){
+	char f;
+	printf("Enter any character\n");        
+	scanf("%c", &f);
+	int a, b;
+	printf("Enter two integer numbers \n");
+	scanf("%d%d", &a, &b);
+	printf("The Sum of two numbers is:%d \n", sum(a,b));
+	printf("The Total of two numbers is:%.3lf \n", kujumlisha(a,b));
+	printf("The Average of two numbers is: %.2f \n", average(a,b));
+	printf("The maxmum number is:%d \n", max(a,b));
+	printf("The minmum number is:%d \n", min(a,b));
+	printf("The different will be:%d \n", diff(a,b));
+	return 0;
+}               
+ int sum(int a, int b){  
+return(a+b);
+}
+double kujumlisha(double j, double o){
+	return(j+o);
+}
+float average(float a, float b){
+	return(a+b)/2;
+}
+	int max(int j, int i){             
+		if(j>i)
+		return j;
+		else
+		return i;
+	} 
+	int min(int p, int q){          
+		if(p<q)
+		return p;                       
+		else
+		return q;
+	}
+		int diff(int s, int n){
+			return(s-n);
+	}		
+	
+	/*Abstraction is used to hide  background details or any un necessary implementation about the data so that user only seee the required information
+             in  c function code,abstraction  has been expressed on the header file #include<stdio.h>.
+           Abstrutraction is applied to the program to allow user to enter
+	 number and character in order to giveout the output*/
+	                                     
+	                                   
+	/*
+     Encupusulation
+
+      is a process of wripping code and data together into a single units example acapsule which is mixed of several medicine
+   in our c code encupusulation is expressed on function balance(),since the function is declared with inline function, which is for
+   calling function directly Rather than creating a separate set of instruction in memory,thus the the code become more efficient
+
+   Encupusulation is applied to find
+    the sum, average, min, max, and different of numbers at the time*/ 
+	
+	/*
+    polymorphism
+   is the ability of an object to take many form. it helps as to perform the some action in many different ways.in our 
+   c programming polymorphism
+   is expressed in the function depost() since  the function can be used to express valuess or data in more than one form.
+   Polymorphism is applies to the program, when one task
+     perform in different way. for example to sum and kujumlisha */ 
+     
+     /*
+  inheritance;is a concept that acquires the properties from one class to  another classes.
+  in our c code the function depost () is being  inherited by another function.the main function inherits details from the  depost() function
+   Inheritance is applied to the program from the functions() above
+     and the functions() below performing different operations according to the function() above, */
